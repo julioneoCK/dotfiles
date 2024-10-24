@@ -1,5 +1,5 @@
 
-7/home/julio/.config/nvim/lua/julio/plugins/nvim-cmp.luaƒreturn {
+7/home/julio/.config/nvim/lua/julio/plugins/nvim-cmp.luaûreturn {
 	"hrsh7th/nvim-cmp",
 	event = "InsertEnter",
 	dependencies = {
@@ -16,7 +16,6 @@
 		"rafamadriz/friendly-snippets", -- useful snippets
 		"onsails/lspkind.nvim", -- vs-code like pictograms
 	},
- local 
 	config = function()
 		local cmp = require("cmp")
 
@@ -65,5 +64,4 @@
 		})
 	end,
 }
-É ÉÍ
-Íƒ "(49add102346311e7c272f85f980c50fe1462f736*/home/julio2>file:///home/julio/.config/nvim/lua/julio/plugins/nvim-cmp.lua:file:///home/julio
+û"(5dfb0be99cdf27766cb005e4c9bd66028498b348*/home/julio2>file:///home/julio/.config/nvim/lua/julio/plugins/nvim-cmp.lua:file:///home/julio

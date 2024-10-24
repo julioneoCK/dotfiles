@@ -46,4 +46,4 @@
 		keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
 	end,
 }
-³	"(49add102346311e7c272f85f980c50fe1462f736*/home/julio2?file:///home/julio/.config/nvim/lua/julio/plugins/nvim-tree.lua:file:///home/julio
+³	 "(5dfb0be99cdf27766cb005e4c9bd66028498b348*/home/julio2?file:///home/julio/.config/nvim/lua/julio/plugins/nvim-tree.lua:file:///home/julio
