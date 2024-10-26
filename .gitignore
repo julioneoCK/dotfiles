@@ -16,3 +16,4 @@ code
 .tmux
 !.config/
 .config/lazygit/
+.codeium
