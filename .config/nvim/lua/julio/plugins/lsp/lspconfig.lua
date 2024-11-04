@@ -17,6 +17,14 @@ return {
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
 		local keymap = vim.keymap -- for conciseness
+		local function organize_imports()
+			local params = {
+				command = "_typescript.organizeImports",
+				arguments = { vim.api.nvim_buf_get_name(0) },
+				title = "",
+			}
+			vim.lsp.buf.execute_command(params)
+		end
 
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -24,7 +32,8 @@ return {
 				-- Buffer local mappings.
 				-- See `:help vim.lsp.*` for documentation on any of the below functions
 				local opts = { buffer = ev.buf, silent = true }
-
+				opts.desc = "Organize Imports"
+				keymap.set("n", "<A-o>", organize_imports, opts)
 				-- set keybinds
 				opts.desc = "Show LSP references"
 				keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references

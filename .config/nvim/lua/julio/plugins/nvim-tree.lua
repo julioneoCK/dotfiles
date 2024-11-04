@@ -10,7 +10,6 @@ return {
 		nvimtree.setup({
 			view = {
 				side = "left",
-				relativenumber = true,
 			},
 			-- change folder arrow icons
 			-- disable window_picker for
