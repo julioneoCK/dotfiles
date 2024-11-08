@@ -13,7 +13,6 @@ return {
 					},
 				},
 			},
-			theme = "dragon",
 			overrides = function(colors)
 				local theme = colors.theme
 				return {

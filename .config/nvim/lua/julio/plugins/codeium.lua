@@ -5,6 +5,13 @@ return {
 		"hrsh7th/nvim-cmp",
 	},
 	config = function()
-		require("codeium").setup({})
+		require("codeium").setup({
+			virtual_text = {
+				enabled = true,
+				key_bindings = {
+					accept = "<C-y>",
+				},
+			},
+		})
 	end,
 }
