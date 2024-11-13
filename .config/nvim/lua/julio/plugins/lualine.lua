@@ -12,11 +12,11 @@ return {
 			},
 			sections = {
 				lualine_a = { "mode" }, -- Solo mostrar el modo de inserción (normal, insert, etc.)
-				lualine_b = {},
+				lualine_b = { "branch" },
 				lualine_c = { "filename" }, -- Mostrar solo el nombre del archivo actual
 				lualine_x = {},
 				lualine_y = {},
-				lualine_z = {},
+				lualine_z = { "location" },
 			},
 		})
 	end,
