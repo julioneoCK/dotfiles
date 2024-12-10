@@ -10,8 +10,23 @@ return {
 		nvimtree.setup({
 			view = {
 				side = "left",
+				width = 30,
 			},
-			-- change folder arrow icons
+			renderer = {
+				icons = {
+					glyphs = {
+						git = {
+							unstaged = "U",
+							staged = "S",
+							unmerged = "UM",
+							renamed = "R",
+							deleted = "D",
+							untracked = "",
+							ignored = "I",
+						},
+					},
+				},
+			}, -- change folder arrow icons
 			-- disable window_picker for
 			-- explorer to work well with
 			-- window splits

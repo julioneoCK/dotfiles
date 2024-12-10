@@ -5,6 +5,7 @@ local opt = vim.opt
 opt.signcolumn = "no"
 opt.relativenumber = true
 opt.number = true
+opt.cursorline = true
 
 opt.tabstop = 2
 opt.shiftwidth = 2 -- 2 spaces for indent width
