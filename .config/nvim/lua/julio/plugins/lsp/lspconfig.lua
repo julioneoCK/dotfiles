@@ -125,6 +125,23 @@ return {
 					},
 				})
 			end,
+			["angularls"] = function()
+				lspconfig["angularls"].setup({
+					cmd = {
+						"node", -- Ruta al binario de Node.js
+						vim.fn.stdpath("data")
+							.. "/mason/packages/angular-language-server/node_modules/@angular/language-server/index.js",
+						"--stdio",
+					},
+					on_attach = function(client, bufnr)
+						-- Configura tus keybindings o cualquier funcionalidad adicional aquí
+						print("Angular LSP conectado.")
+					end,
+					filetypes = { "typescript", "html", "typescriptreact" },
+					root_dir = lspconfig.util.root_pattern("angular.json", ".git"), -- Detecta el directorio raíz
+					capabilities = require("cmp_nvim_lsp").default_capabilities(), -- Autocompletado con nvim-cmp
+				})
+			end,
 		})
 	end,
 }
